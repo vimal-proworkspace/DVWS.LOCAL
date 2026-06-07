@@ -1,1 +1,7 @@
 docker-compose --version
+curl -o docker-compose.yml https://raw.githubusercontent.com/OWASP/crAPI/main/deploy/docker/docker-compose.yml
+gedit docker-compose.yml
+
+
+
+docker-compose -f docker-compose.yml --compatibility up -d
